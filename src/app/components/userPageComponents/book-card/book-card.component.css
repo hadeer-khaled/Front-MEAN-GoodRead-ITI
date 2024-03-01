@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ngb-rating {
+  color: #ff9800 !important;
+}
+img {
+  height: 60% !important;
+  width: 80%;
+}
+button {
+  border: 1px solid var(--royal-green);
+  color: var(--royal-green);
+}
+button:hover {
+  background-color: var(--royal-green);
+}
+button:hover a {
+  color: white;
+  font-weight: normal;
+  background-color: var(--royal-green);
+}
+.modal-header,
+.modal-body,
+.modal-footer {
+  margin: 10px !important;
+}
+.book-details {
+  box-shadow: 1px 1px 4px 0px #9e9e9e;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.flex-box {
+  display: flex;
+  width: 700px;
+  margin: 15px auto 0px;
+  align-items: center;
+}
+.left {
+  width: 100%;
+}
+
+.custom-rounded-btn {
+  border-radius: 15px;
+  margin-top: 2px;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  text-align: right;
+}
+
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+  color: #666;
+}
+
+.rating:not(:checked) > label:before {
+  content: "★";
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+
+.comment-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.course-details-card {
+  width: 140%; /* Ensure the review section takes full width */
+  height: 100%;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.reviews-section {
+  margin: 10px auto;
+  width: 70%;
+}
+
+.reviewer-img {
+  height: 60px !important;
+  width: 60px !important;
+  border-radius: 50% !important;
+}
